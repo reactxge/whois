@@ -30,7 +30,7 @@
             }
 
             // Make an API call to fetch WHOIS data
-            $http.get('https://nic.ge/en/domains/whois' + $scope.domain)
+            $http.get('https://nic.ge/en/domains/whois/' + $scope.domain)
                 .then(function (response) {
                     $scope.whoisData = response.data;
                 })
